@@ -1,13 +1,12 @@
 # BiBSpell
 
 
-
-
-
 ### Prepare the  Base-BERT Model
 
-1.Click https://huggingface.co/bert-base-chinese#
+1.Click https://huggingface.co/bert-base-chinese
+
 2.Click the download icon in "Files and Versions" to download "pytorch_model.bin"
+
 3.move "pytorch_model.bin" to the path "model/bert-base-chinese"
 
 ### How to run?
@@ -22,11 +21,12 @@ conda activate spelLM
 conda install pytorch-gpu==1.2.0
 conda install scikit-learn==0.23.1
 conda install tqdm
+pip install transformers==3.0.0
+unzip -d data/train_data/ data/train_data/280k_mistake_train_true.zip
+unzip -d data/train_data/ data/train_data/280k_correct_train_true.zip
 ```
 
 
-
-pip install transformers==3.0.0
 -----------------------------------------------------------------------
 The training are divided into three steps：
 
