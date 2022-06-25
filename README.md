@@ -18,7 +18,7 @@ Requirements:
 ```
 conda create -n spelLM python=3.6
 conda activate spelLM
-conda install pytorch-gpu==1.2.0
+conda install pytorch-gpu==1.7.0
 conda install scikit-learn==0.23.1
 conda install tqdm
 pip install transformers==3.0.0
